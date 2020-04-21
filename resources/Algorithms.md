@@ -70,7 +70,7 @@ But how do we measure if clusters are close? We use similarity distances. Let d(
 
 For the maximum linkage, at each step, the two clusters separated by the shortest distance are combined. The similarity distances can be illustrated as follows : <linkage-example png/>
 
-#### Clustering Coefficient 
+#### Clustering Coefficient
 
 Measures how well two nodes tend to cluster together.
 
