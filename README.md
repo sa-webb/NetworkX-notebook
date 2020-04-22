@@ -71,3 +71,61 @@ The question of how to immunize efficiently scale free networks which represent 
 Percolation Theory describes the behaviour of connected clusters in a random graph.
 
 Bootstrap percolation removes active cells from clusters when they have too few active neighbors, and looks at the connectivity of the remaining cells.
+
+### Graph Learning Tasks
+
+#### Link Prediction
+
+Social media suggestions after signup.
+
+predict future relations or missing edges.
+
+##### Similarity scoring
+
+Common neighbors
+
+Intersection : S(i,j)=∣ N(i) ∩ N(j)∣
+
+Union : S(i,j)=∣ N(i) ∩ N(j)∣
+
+Jaccard Coefficient = Intersection / Union
+
+Preferential attachment : S(i,j)=∣N(i,j)∣∗∣N(j)∣
+
+Adamic-Adar index
+Common elements with very large neighborhoods are less significant.
+When predicting a connection between two nodes compared to elements shared between a small number of nodes.
+For each common neighbor of nodes i and j,
+we add 1 divided by the total number of neighbors of that node.
+
+##### Performance metrics
+
+How do we perform the evaluation of the link prediction? We must hide a subset of node pairs, and predict their links based on the rules defined above. This is the equivalent of the train-test-split in supervised learning.
+We then evaluate the proportion of correct predictions for dense graphs, or use Area under the Curve criteria for Sparse graphs.
+
+##### Implementation
+
+Corresponds to [Jupyter Notebook](Graph-Theory-Part-3.ipynb)
+
+#### Node label prediction
+
+The Label Propagation Algorithm (LPA) is a fast algorithm for finding communities in a graph using network structure alone as its guide, without any predefined objective function or prior information about the communities.
+
+The Smoothness assumption states that points connected via a path through high-density regions on the data are likely to have similar labels.
+
+##### Node embedding
+
+Classification
+node2vec
+
+##### Edge embedding
+
+Classification
+
+Given any graph, it can learn continuous feature representations for the nodes, which can then be used for various downstream machine learning tasks.”
+
+#### Graph embedding
+
+<https://github.com/benedekrozemberczki/graph2vec>
+
+python src/graph2vec.py --input-path data_folder/ --output-path output.csv
