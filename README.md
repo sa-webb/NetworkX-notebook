@@ -2,9 +2,9 @@
 
 Introduction to Graphs (Part 1)
 Graph Algorithms (Part 2)
-Learning with Graphs in Python
+Learning with Graphs in Python (Part 3)
 
-This code corresponds with <https://towardsdatascience.com/introduction-to-graphs-part-1-2de6cda8c5a5>
+This code corresponds with [Towards Data Science Introduction to Graphs](https://towardsdatascience.com/introduction-to-graphs-part-1-2de6cda8c5a5)
 
 ## Tools
 
@@ -64,7 +64,7 @@ The question of how to immunize efficiently scale free networks which represent 
 * One such strategy is to immunize the largest degree nodes.
 * Realistic nodes the global structure is not available and the largest degree nodes are not known.
 * Properties of random graph may change or remain invariant.
-[https://en.wikipedia.org/wiki/Scale-free_network]
+[Scale-free Networks](https://en.wikipedia.org/wiki/Scale-free_network)
 
 ### Percolation
 
@@ -126,6 +126,6 @@ Given any graph, it can learn continuous feature representations for the nodes, 
 
 #### Graph embedding
 
-<https://github.com/benedekrozemberczki/graph2vec>
+[Graph2Vec](https://github.com/benedekrozemberczki/graph2vec)
 
 python src/graph2vec.py --input-path data_folder/ --output-path output.csv
